@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音频播放器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>音频播放器</h1>
+    <div id="audio-player">
+        <audio id="audio" controls></audio>
+        <div id="controls">
+            <button id="playPauseBtn">播放</button>
+            <button id="fastForwardBtn">快进</button>
+            <button id="speedBtn">1x</button>
+            <button id="loopBtn">循环播放</button>
+            <button id="shuffleBtn">随机播放</button>
+            <input type="range" id="volumeSlider" min="0" max="100" value="100">
+            <input type="range" id="progressBar" min="0" max="100" value="0">
+        </div>
+    </div>
+    <div id="file-list">
+        <h2>音频文件列表</h2>
+        <input type="text" id="searchInput" placeholder="搜索音频...">
+        <ul id="audio-files"></ul>
+    </div>
+    <div id="pagination"></div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
